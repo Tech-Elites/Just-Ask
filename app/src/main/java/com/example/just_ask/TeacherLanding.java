@@ -14,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -62,21 +61,15 @@ public class TeacherLanding extends AppCompatActivity {
                         {
                             Toast.makeText(TeacherLanding.this, "S", Toast.LENGTH_SHORT).show();
                             try{
-                                new CountDownTimer(30000, 1000) {
+
+                                new CountDownTimer(20000, 1000) {
 
                                     public void onTick(long millisUntilFinished) {
                                         countdownTeacher1.setText("Seconds remaining: " + millisUntilFinished / 1000);
                                     }
 
                                     public void onFinish() {
-                                        countdownTeacher1.setText("Done!");
-                                        try{
-                                            Thread.sleep(2000);
-                                            FirebaseDatabase.getInstance().getReference().child("teachers").child(user.getUid()).child("current").setValue(0);
-                                        }
-                                        catch (Exception e) {
-
-                                        }
+                                        reset();
                                     }
                                 }.start();
                             }
@@ -89,9 +82,10 @@ public class TeacherLanding extends AppCompatActivity {
                         }
                     }
                 });
-
-
-
     }
 
+    public void reset(){
+        countdownTeacher1.setText("Done!");
+
+    }
 }
