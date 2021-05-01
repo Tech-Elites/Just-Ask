@@ -63,7 +63,7 @@
             android:layout_marginRight="50dp"
             android:textSize="20dp"
             android:textColor="@color/white"
-            android:background="@color/purple3"
+            android:background="@drawable/button_border"
             android:textAllCaps="false"
             android:text="Login" />
 
