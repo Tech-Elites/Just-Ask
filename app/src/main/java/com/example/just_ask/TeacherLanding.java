@@ -62,15 +62,14 @@ public class TeacherLanding extends AppCompatActivity {
                             Toast.makeText(TeacherLanding.this, "S", Toast.LENGTH_SHORT).show();
                             try{
 
-                                new CountDownTimer(30000, 1000) {
+                                new CountDownTimer(3000, 1000) {
 
                                     public void onTick(long millisUntilFinished) {
                                         countdownTeacher1.setText("Seconds remaining: " + millisUntilFinished / 1000);
                                     }
 
                                     public void onFinish() {
-                                        countdownTeacher1.setText("Done!");
-                                        
+                                        reset();
                                     }
                                 }.start();
                             }
@@ -83,9 +82,10 @@ public class TeacherLanding extends AppCompatActivity {
                         }
                     }
                 });
-
-
-
     }
 
+    public void reset(){
+        countdownTeacher1.setText("Done!");
+
+    }
 }
