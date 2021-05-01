@@ -6,21 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".TeacherLanding">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Teacher"
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="87dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:onClick="logout"
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="205dp" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginVertical="20dp"
+            android:layout_height="wrap_content"
+            android:onClick="logout"
+            android:text="Logout" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_height="78dp"
+            android:text="Create Questionare:"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/newQuestion"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="newQ"
+            android:text="New" />
+
+        <TextView
+            android:id="@+id/countdownTeacher"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:padding="10dp"
+
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <ListView
+            android:id="@+id/teacherResponseList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </ListView>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
