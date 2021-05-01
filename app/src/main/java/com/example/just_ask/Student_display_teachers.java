@@ -30,6 +30,8 @@ public class Student_display_teachers extends AppCompatActivity {
         setContentView(R.layout.activity_student_display_teachers);
         lv=findViewById(R.id.teacherListStudent);
 
+        getSupportActionBar().setTitle("");
+
         lv.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
                     @Override

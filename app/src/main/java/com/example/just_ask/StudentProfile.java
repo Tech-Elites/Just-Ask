@@ -29,6 +29,7 @@ public class StudentProfile extends AppCompatActivity {
         s=findViewById(R.id.studentStream);
         a=findViewById(R.id.studentAge);
         y=findViewById(R.id.studentYear);
+        getSupportActionBar().setTitle("Profile");
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("students").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
         databaseReference.addValueEventListener(new ValueEventListener() {

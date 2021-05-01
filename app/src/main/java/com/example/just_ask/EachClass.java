@@ -17,6 +17,8 @@ public class EachClass extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_each_class);
 
+        getSupportActionBar().setTitle("Classroom");
+
         Bundle b = getIntent().getExtras();
         name=b.getString("name");
         class1=b.getString("class");

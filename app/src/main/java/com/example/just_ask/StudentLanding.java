@@ -15,6 +15,7 @@ public class StudentLanding extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_landing);
+        getSupportActionBar().setTitle("");
 
     }
     public void askdoubt(View view){
