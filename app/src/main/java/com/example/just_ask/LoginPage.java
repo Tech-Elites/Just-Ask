@@ -50,6 +50,7 @@ public class LoginPage extends AppCompatActivity {
     void login(String email, String password){
         if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password))
         {
+            p.setVisibility(View.INVISIBLE);
             new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_info)
                     .setTitle("Details not filled!")
@@ -102,6 +103,7 @@ public class LoginPage extends AppCompatActivity {
                     }
                     else
                     {
+                        p.setVisibility(View.INVISIBLE);
                         new AlertDialog.Builder(LoginPage.this)
                                 .setIcon(android.R.drawable.ic_dialog_alert)
                                 .setTitle("Error logging in.")
