@@ -27,9 +27,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="80dp"
-            android:paddingHorizontal="110dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingHorizontal="100dp"
+            android:paddingTop="80dp">
 
             <Button
                 android:id="@+id/askdoubt"
@@ -60,9 +60,10 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_border"
                 android:onClick="logout"
+                android:text="Log out"
+                android:layout_marginLeft="40dp"
                 android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:text="Log out" />
+                android:textColor="@color/white" />
         </LinearLayout>
 
     </LinearLayout>
