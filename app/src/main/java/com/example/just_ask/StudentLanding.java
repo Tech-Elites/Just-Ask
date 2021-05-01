@@ -30,4 +30,8 @@ public class StudentLanding extends AppCompatActivity {
 
     }
 
+    public void studentProfile(View view) {
+        Intent i = new Intent(StudentLanding.this, StudentProfile.class);
+        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(StudentLanding.this).toBundle());
+    }
 }
