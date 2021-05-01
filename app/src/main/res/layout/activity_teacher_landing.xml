@@ -23,4 +23,10 @@
         android:text="Button"
         tools:layout_editor_absoluteX="64dp"
         tools:layout_editor_absoluteY="205dp" />
+    <Button
+        android:onClick="current"
+        android:id="@+id/currentvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

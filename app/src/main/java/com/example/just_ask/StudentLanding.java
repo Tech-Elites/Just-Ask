@@ -17,6 +17,11 @@ public class StudentLanding extends AppCompatActivity {
         setContentView(R.layout.activity_student_landing);
 
     }
+    public void askdoubt(View view){
+        Intent i = new Intent(StudentLanding.this, Student_display_teachers.class);
+        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(StudentLanding.this).toBundle());
+        finish();
+    }
     public void logout(View view) {
         FirebaseAuth.getInstance().signOut();
         Intent i = new Intent(StudentLanding.this, LoginPage.class);

@@ -8,13 +8,25 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class TeacherLanding extends AppCompatActivity {
 
+    FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_landing);
+    }
+
+    public void current(View view){
+        FirebaseDatabase database=FirebaseDatabase.getInstance();
+        FirebaseUser user=firebaseAuth.getCurrentUser();
+        String current=user.getUid();
+        DatabaseReference mRef=database.getReference().child("teachers").child(current).child("current");
+        mRef.setValue("1");
     }
 
     public void logout(View view) {
