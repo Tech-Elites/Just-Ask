@@ -35,6 +35,7 @@ public class TeacherLanding extends AppCompatActivity {
         setContentView(R.layout.activity_teacher_landing);
         newQ=findViewById(R.id.newQuestion);
         user= FirebaseAuth.getInstance().getCurrentUser();
+        getSupportActionBar().setTitle("Manage");
 
 //        newQ.setVisibility(View.INVISIBLE);
 //        check();

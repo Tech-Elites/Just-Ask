@@ -35,6 +35,7 @@ public class LoginPage extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         p=findViewById(R.id.progressBarLogin);
         p.setVisibility(View.INVISIBLE);
+        getSupportActionBar().setTitle("");
 
     }
 
