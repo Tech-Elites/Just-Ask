@@ -70,6 +70,7 @@ public class TeacherLanding extends AppCompatActivity {
 
                                     public void onFinish() {
                                         reset();
+
                                     }
                                 }.start();
                             }
@@ -86,6 +87,12 @@ public class TeacherLanding extends AppCompatActivity {
 
     public void reset(){
         countdownTeacher1.setText("Done!");
+        try{
+            Thread.sleep(2000);
+        }
+        catch (Exception e){
 
+        }
+        FirebaseDatabase.getInstance().getReference().child("teachers").child(user.getUid()).child("current").setValue(0);
     }
 }
