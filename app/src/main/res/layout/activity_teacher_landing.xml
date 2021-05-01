@@ -6,4 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".TeacherLanding">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <Button
+        android:onClick="logout"
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="205dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
