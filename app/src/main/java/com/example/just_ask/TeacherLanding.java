@@ -20,8 +20,9 @@ public class TeacherLanding extends AppCompatActivity {
     public void logout(View view) {
         FirebaseAuth.getInstance().signOut();
         Intent i = new Intent(TeacherLanding.this, LoginPage.class);
-        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i, ActivityOptions.makeSceneTransitionAnimation(TeacherLanding.this).toBundle());
+        finish();
     }
 
 }

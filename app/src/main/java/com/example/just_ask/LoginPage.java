@@ -78,8 +78,8 @@ public class LoginPage extends AppCompatActivity {
                                         {
                                             p.setVisibility(View.INVISIBLE);
                                             Intent i = new Intent(LoginPage.this, TeacherLanding.class);
-                                            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                             startActivity(i, ActivityOptions.makeSceneTransitionAnimation(LoginPage.this).toBundle());
+                                            finish();
                                             flag=0;
                                             break;
                                         }
@@ -87,8 +87,8 @@ public class LoginPage extends AppCompatActivity {
                                     if(flag==1)
                                     {
                                         Intent i = new Intent(LoginPage.this, StudentLanding.class);
-                                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                         startActivity(i, ActivityOptions.makeSceneTransitionAnimation(LoginPage.this).toBundle());
+                                        finish();
                                     }
                                 }
 

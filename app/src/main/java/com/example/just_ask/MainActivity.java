@@ -38,17 +38,16 @@ public class MainActivity extends AppCompatActivity {
                             flag=0;
                             p.setVisibility(View.INVISIBLE);
                             Intent i = new Intent(MainActivity.this, TeacherLanding.class);
-                            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(i, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
+                            finish();
 
                             break;
                         }
                     }
                     if (flag == 1) {
                         Intent i = new Intent(MainActivity.this, StudentLanding.class);
-                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(i, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
-
+                        finish();
                     }
                 }
 
@@ -61,9 +60,8 @@ public class MainActivity extends AppCompatActivity {
         else
         {
             Intent i = new Intent(MainActivity.this, LoginPage.class);
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(i, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
-
+            finish();
         }
 
     }
