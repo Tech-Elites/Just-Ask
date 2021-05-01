@@ -35,6 +35,7 @@
             android:layout_marginHorizontal="100dp"
             android:layout_height="wrap_content"
             android:onClick="newQ"
+            android:focusable="true"
             android:text="New" />
 
         <TextView
