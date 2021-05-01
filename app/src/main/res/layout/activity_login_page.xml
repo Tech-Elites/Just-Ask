@@ -37,6 +37,7 @@
             android:inputType="textPersonName"
             android:hint="email"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:text="" />
 
         <EditText
@@ -51,6 +52,7 @@
             android:textSize="20dp"
             android:hint="password"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:inputType="textPassword" />
 
         <Button
