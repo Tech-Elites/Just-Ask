@@ -32,8 +32,11 @@ public class CustomAdapter extends ArrayAdapter<TeacherDetail> {
         try{
             TeacherDetail currentUser = getItem(position);
 
-            TextView tname = currentItemView.findViewById(R.id.issueName);
-            tname.setText(currentUser.getName());
+            TextView tname = currentItemView.findViewById(R.id.subjectName);
+            tname.setText(currentUser.subject);
+            tname = currentItemView.findViewById(R.id.className);
+            tname.setText(currentUser.class1);
+
         }catch (Exception e){
             System.out.println(e);
         }

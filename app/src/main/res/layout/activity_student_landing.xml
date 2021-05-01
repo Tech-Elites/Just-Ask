@@ -30,6 +30,7 @@
                 android:layout_height="180dp"
                 android:text="Ask Doubt"/>
             <Button
+                android:onClick="studentProfile"
                 android:layout_width="180dp"
                 android:layout_height="180dp"
                 android:text="profile"/>
