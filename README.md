@@ -25,4 +25,4 @@ Git – For collaborating within members and hosting on github
 
 ## Application
 
-![WhatsApp Image 2021-05-02 at 11 36 03 AM (1)](https://user-images.githubusercontent.com/63179137/116804266-104f8880-ab3b-11eb-82aa-3eb73bcfd86b.jpeg)
+<img src="https://user-images.githubusercontent.com/63179137/116804266-104f8880-ab3b-11eb-82aa-3eb73bcfd86b.jpeg" hieght=200>
