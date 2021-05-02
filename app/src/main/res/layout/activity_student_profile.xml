@@ -18,7 +18,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:textSize="30dp"
-            android:padding="20dp"
+            android:padding="14dp"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:text="Details" />
@@ -34,7 +34,7 @@
 
         <TextView
             android:textSize="20dp"
-            android:padding="15dp"
+            android:padding="12dp"
             android:id="@+id/studentName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
 
         <TextView
             android:textSize="20dp"
-            android:padding="15dp"
+            android:padding="12dp"
             android:id="@+id/studentStream"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
 
         <TextView
             android:textSize="20dp"
-            android:padding="15dp"
+            android:padding="12dp"
             android:id="@+id/studentAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
 
         <TextView
             android:textSize="20dp"
-            android:padding="15dp"
+            android:padding="12dp"
             android:id="@+id/studentYear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
