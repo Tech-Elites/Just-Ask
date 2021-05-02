@@ -25,4 +25,4 @@ Git – For collaborating within members and hosting on github
 
 ## Application
 
-<img src="https://user-images.githubusercontent.com/63179137/116804266-104f8880-ab3b-11eb-82aa-3eb73bcfd86b.jpeg" hieght=200>
+<img src="https://user-images.githubusercontent.com/63179137/116804266-104f8880-ab3b-11eb-82aa-3eb73bcfd86b.jpeg" hieght="200px">
